@@ -1,0 +1,31 @@
+.cart-item {
+    transition: all 0.3s ease;
+}
+
+.cart-item:hover {
+    background-color: #f8f9fa;
+}
+
+.quantity-controls button {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-controls input {
+    width: 60px;
+    text-align: center;
+    margin: 0 8px;
+}
+
+@media (max-width: 768px) {
+    .cart-item .row>div {
+        margin-bottom: 10px;
+    }
+
+    .cart-item .text-end {
+        text-align: left !important;
+    }
+}

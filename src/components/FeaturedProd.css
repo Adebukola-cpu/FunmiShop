@@ -1,0 +1,69 @@
+featured-body {
+    padding: 60px 0;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Headline */
+.featured-body h2 {
+    color: blueviolet;
+    font-weight: 700;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+}
+
+/* Product cards */
+.product.card {
+    background: rgba(255, 255, 255, 0.2);
+    /* translucent white */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    /* glassy blur */
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.product.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Product images */
+.product img {
+    border-radius: 15px 15px 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Buy Now button */
+.product .btn {
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.product .btn:hover {
+    background-color: blueviolet;
+    color: white;
+    border-color: blueviolet;
+}
+
+
+
+.product-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+/* Animate in when component mounts */
+.product-card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover effect */
+.product-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
