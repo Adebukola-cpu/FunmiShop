@@ -41,7 +41,7 @@ const FeaturedProd = ({ onCartUpdate }) => {
 
       onCartUpdate?.(res.data.cart.totalItems);
       alert("Added to cart");
-    } catch (err) {
+    } catch (error) {
       alert("Failed to add to cart");
     }
   };
